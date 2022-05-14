@@ -1,0 +1,54 @@
+﻿<div class="sidebar" data-color="orange">
+    <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
+    -->
+    <div class="logo">
+        <a href="http://www.asp.net" class="simple-text logo-mini">
+            
+        </a>
+        <a href="http://www.asp.net" class="simple-text logo-normal">
+            Smart Trash
+        </a>
+    </div>
+    <div class="sidebar-wrapper">
+        <ul class="nav">
+            <li class="@Html.IsSelected(controller: nowui.MVC.Pages.Dashboard.Controller)">
+                <a href="@nowui.MVC.Pages.Dashboard.Url">
+                    <i class="now-ui-icons design_app"></i>
+                    <p>Dashboard</p>
+                </a>
+            </li>
+            <li class="@Html.IsSelected(controller: nowui.MVC.Pages.Containers.Controller)">
+                <a href="@nowui.MVC.Pages.Containers.Url">
+                    <i class="now-ui-icons files_box"></i>
+                    <p>Containers</p>
+                </a>
+            </li>
+            
+            <li class="@Html.IsSelected(controller: nowui.MVC.Pages.Reports.Controller)">
+                <a href="@nowui.MVC.Pages.Reports.Url">
+                    <i class="now-ui-icons files_single-copy-04"></i>
+                    <p>Reports</p>
+                </a>
+            </li>
+                <li class="@Html.IsSelected(controller: nowui.MVC.Pages.Routes.Controller)">
+                   <a href="@nowui.MVC.Pages.Routes.Url">
+                         <i class="now-ui-icons shopping_delivery-fast"></i>
+                          <p>Routes</p>
+                   </a>
+            </li>
+
+            <li class="@Html.IsSelected(controller: nowui.MVC.Pages.Notifications.Controller)">
+                <a href="@nowui.MVC.Pages.Notifications.Url">
+                    <i class="now-ui-icons business_bulb-63"></i>
+                    <p>Notifications</p>
+                </a>
+            </li>
+
+         
+
+            
+
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,98 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.body-override {
+    background: url(../images/4.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+.login-container {
+    width: 300px;
+    background-color: #ffffffcc;
+    border: solid 1px #ffffffcc;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.login-container .btn-login {
+    background-color: #f96332;
+    color: white;
+    border:none;
+    width:95px;
+}
+
+.login-container .form-control {
+    width:92%;
+}
+
+.login-container .header-text {
+    text-align:center;
+    font-weight:bold;
+}
+
+.login-container .text-center {
+    text-align:center;
+}
+
+.login-container .login-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.center-div-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 84px;
+}
+
+.navbar-override {
+    background-color:#f96332;
+    border:none;
+}
+
+.footer-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    text-align: center;
+}

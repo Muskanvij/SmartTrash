@@ -1,0 +1,278 @@
+﻿
+@{ ViewData["Title"] = "Index"; }
+
+
+    <div class="panel-header panel-header-sm">
+
+
+        <div class="header text-center">
+            <h2 class="title">
+                Notifications
+            </h2>
+        </div>
+
+
+    </div> 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Minimal 1.0 - Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+
+    <link rel="icon" type="image/ico" href="http://tattek.com/minimal/~/assets/images/favicon.ico" />
+    <!-- Bootstrap -->
+    <link href="~/assets/css/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/assets/css/vendor/animate/animate.min.css">
+    <link type="text/css" rel="stylesheet" media="all" href="~/assets/js/vendor/mmenu/css/jquery.mmenu.all.css" />
+    <link rel="stylesheet" href="~/assets/js/vendor/videobackground/css/jquery.videobackground.css">
+    <link rel="stylesheet" href="~/assets/css/vendor/bootstrap-checkbox.css">
+
+    <link rel="stylesheet" href="~/assets/js/vendor/rickshaw/css/rickshaw.min.css">
+    <link rel="stylesheet" href="~/assets/js/vendor/morris/css/morris.css">
+    <link rel="stylesheet" href="~/assets/js/vendor/tabdrop/css/tabdrop.css">
+    <link rel="stylesheet" href="~/assets/js/vendor/summernote/css/summernote.css">
+    <link rel="stylesheet" href="~/assets/js/vendor/summernote/css/summernote-bs3.css">
+    <link rel="stylesheet" href="~/assets/js/vendor/chosen/css/chosen.min.css">
+    <link rel="stylesheet" href="~/assets/js/vendor/chosen/css/chosen-bootstrap.css">
+
+    <link href="~/assets/css/minimal.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="bg-1">
+
+
+
+    <!-- Preloader -->
+    
+    <!--/Preloader -->
+    <!-- Wrap all page content here -->
+    <div id="wrap">
+
+
+
+
+        <!-- Make page fluid -->
+        <!-- /page header -->
+        <!-- content main container -->
+        <div class="main">
+
+
+
+            <!-- cards -->
+            <!-- /cards -->
+            <!-- row -->
+            <!-- /row -->
+            <!-- row -->
+            <div class="row">
+
+
+
+
+                <!-- col 6 -->
+                <!-- /col 6 -->
+                <!-- col 6 -->
+                <div class="col-md-6">
+
+
+
+                    <!-- tile -->
+                    <section class="tile transparent">
+
+
+
+
+                        <!-- tile header -->
+                        <div class="tile-header transparent">
+                            <h1><strong>Send</strong> Notifications</h1>
+
+                        </div>
+                        <!-- /tile header -->
+                        <!-- tile widget -->
+                        <div class="tile-widget color transparent-black rounded-top-corners">
+                            <form class="form-horizontal" role="form">
+                                <div class="form-group">
+                                    <label for="message-to" class="col-sm-2 control-label font-slab">Recipients</label>
+                                    <div class="col-sm-10">
+                                        <select data-placeholder="Select recipients..." multiple="" tabindex="3" class="chosen-select form-control chosen-transparent" id="message-to">
+                                            <option value="http://tattek.com/minimal/ici@gmail.com">Aftab\+610416708838</option>
+                                            <option value="http://tattek.com/minimal/johny@gmail.com">Priyanshu\+61481156349</option>
+                                            <option value="http://tattek.com/minimal/arnie@gmail.com">Shou Ding\+61435947076</option>
+                                            <option value="http://tattek.com/minimal/pete@gmail.com">Hirusha\+61450818890</option>
+                                            <option value="http://tattek.com/minimal/gorge@gmail.com">Muskan\+61405628113</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group no-bottom-margin">
+                                    <label for="subject" class="col-sm-2 control-label font-slab">Subject</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control transparent" id="subject" placeholder="Type subject here...">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /tile widget -->
+                        <!-- tile body -->
+                        <div class="tile-body nopadding">
+                            <div id="quick-message-content"></div>
+                        </div>
+                        <!-- /tile body -->
+                        <!-- tile footer -->
+                        <div class="tile-footer rounded-bottom-corners text-right">
+                            <a class="submit font-slab" href="/SMS/Index"><strong>Send</strong> message <i class="fa fa-comment"></i></a>
+                        </div>
+                        <!-- /tile footer -->
+
+
+
+                    </section>
+                    <!-- /tile -->
+
+                    <p class="blockquote blockquote-primary">
+                        *Future Update* Automated SMS trigger
+                        Adjust the time to send send messages to driver everyday *Future Update*
+
+                        <form method="post" asp-page="/Routes/Index" class="formTexts">
+
+                            <input type="radio" id="time" name="council" value="9:00Pm" />
+                            <label for="9:00PM">9:00AM</label>
+
+                            <input type="radio" id="time" name="council" value="10:00Am" />
+                            <label for="10:00AM">10:00AM</label>
+
+                            <input type="radio" id="time" name="council" value="11:00Am" />
+                            <label for="11:00AM">11:00AM</label>
+
+                            <input type="Submit">
+
+                        </form>
+                    </p>
+                    <p class="blockquote blockquote-primary">
+                        Admin can change time accordingly to assign the shift to driver through Automated SMS Services."
+                       
+                 
+                    </p>
+
+
+                </div>
+                <!-- /col 6 -->
+
+
+
+
+            </div>
+            <!-- /row -->
+
+
+
+        </div>
+        <!-- /content container -->
+
+
+
+
+
+
+    </div>
+
+    div class="header text-center">
+    
+    </div>
+    <!-- Page content end -->
+    <!-- Wrap all page content end -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="~/assets/js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="~/assets/js/vendor/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/vendor/mmenu/js/jquery.mmenu.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/vendor/sparkline/jquery.sparkline.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/vendor/nicescroll/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/vendor/animate-numbers/jquery.animateNumbers.js"></script>
+    <script type="text/javascript" src="~/assets/js/vendor/videobackground/jquery.videobackground.js"></script>
+    <script type="text/javascript" src="~/assets/js/vendor/blockui/jquery.blockUI.js"></script>
+
+    <script src="~/assets/js/vendor/flot/jquery.flot.min.js"></script>
+    <script src="~/assets/js/vendor/flot/jquery.flot.time.min.js"></script>
+    <script src="~/assets/js/vendor/flot/jquery.flot.selection.min.js"></script>
+    <script src="~/assets/js/vendor/flot/jquery.flot.animator.min.js"></script>
+    <script src="~/assets/js/vendor/flot/jquery.flot.orderBars.js"></script>
+    <script src="~/assets/js/vendor/easypiechart/jquery.easypiechart.min.js"></script>
+
+    <script src="~/assets/js/vendor/rickshaw/raphael-min.js"></script>
+    <script src="~/assets/js/vendor/rickshaw/d3.v2.js"></script>
+    <script src="~/assets/js/vendor/rickshaw/rickshaw.min.js"></script>
+
+    <script src="~/assets/js/vendor/morris/morris.min.js"></script>
+
+    <script src="~/assets/js/vendor/tabdrop/bootstrap-tabdrop.min.js"></script>
+
+    <script src="~/assets/js/vendor/summernote/summernote.min.js"></script>
+
+    <script src="~/assets/js/vendor/chosen/chosen.jquery.min.js"></script>
+
+    <script src="~/assets/js/minimal.min.js"></script>
+
+    <script>
+        $(function () {
+
+            // Initialize tabDrop
+            $('.tabdrop').tabdrop({ text: '<i class="fa fa-th-list"></i>' });
+
+            //load wysiwyg editor
+            $('#quick-message-content').summernote({
+                toolbar: [
+                    //['style', ['style']], // no style button
+                    ['style', ['bold', 'italic', 'underline', 'clear']],
+                    ['fontsize', ['fontsize']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['height', ['height']],
+                    //['insert', ['picture', 'link']], // no insert buttons
+                    //['table', ['table']], // no table button
+                    //['help', ['help']] //no help button
+                ],
+                height: 143   //set editable area's height
+            });
+
+            //multiselect input
+            $(".chosen-select").chosen({ disable_search_threshold: 10 });
+
+        })
+
+    </script>
+</body>
+</html>
+
+@section Styles{
+    <!-- CSS Files -->
+    <link href="~/nowui/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/nowui/css/now-ui-dashboard.css?v=1.0.1" rel="stylesheet" />
+
+}
+
+@section Scripts{
+    <!--   Core JS Files   -->
+    <script src="~/nowui/js/core/jquery.min.js"></script>
+    <script src="~/nowui/js/core/popper.min.js"></script>
+    <script src="~/nowui/js/core/bootstrap.min.js"></script>
+    <script src="~/nowui/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+
+    <!-- Chart JS -->
+    <script src="~/nowui/js/plugins/chartjs.min.js"></script>
+    <!--  Notifications Plugin    -->
+    <script src="~/nowui/js/plugins/bootstrap-notify.js"></script>
+    <!-- Control Center  -->
+    <script src="~/nowui/js/now-ui-dashboard.js?v=1.0.1"></script>
+
+
+}
